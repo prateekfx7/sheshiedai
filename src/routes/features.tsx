@@ -5,7 +5,7 @@ import { LogoMarquee } from "@/components/logo-marquee";
 export const Route = createFileRoute("/features")({
   head: () => ({
     meta: [
-      { title: "Features — Shield AI" },
+      { title: "Features — She Shield AI" },
       { name: "description", content: "Fake call, AI assistant, loud alarm, safe routes, trusted circles, and self-defense techniques — all in one app." },
     ],
   }),
@@ -96,7 +96,7 @@ function FeaturesPage() {
             <h2 className="font-bold text-[color:var(--blush-deep)]" style={{ fontFamily: "Fustat, sans-serif", fontSize: "clamp(28px,3.5vw,44px)", letterSpacing: "-1px" }}>
               Ready to feel safer, today?
             </h2>
-            <p className="mt-2 max-w-xl text-foreground/70">Join 2,700+ women already protected by Shield AI. Free for 30 days, no card required.</p>
+            <p className="mt-2 max-w-xl text-foreground/70">Join 2,700+ women already protected by She Shield AI. Free for 30 days, no card required.</p>
           </div>
           <Link
             to="/sos"

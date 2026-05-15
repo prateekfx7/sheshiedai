@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export const Route = createFileRoute("/sos")({
   head: () => ({
     meta: [
-      { title: "SOS — Shield AI" },
+      { title: "SOS — She Shield AI" },
       { name: "description", content: "One-tap SOS that alerts your trusted circle, shares live location, and sounds a 120dB alarm." },
     ],
   }),
