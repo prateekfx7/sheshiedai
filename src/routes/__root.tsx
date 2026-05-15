@@ -39,8 +39,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shield AI — Smarter safety for women" },
-      { name: "description", content: "Shield AI helps women stay safe with intelligent threat detection, real-time alerts, and a trusted guardian network." },
+      { title: "She Shield AI — Smarter safety for women" },
+      { name: "description", content: "She Shield AI helps women stay safe with intelligent threat detection, real-time alerts, and a trusted guardian network." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
