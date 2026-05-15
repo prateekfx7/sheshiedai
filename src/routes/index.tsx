@@ -77,8 +77,10 @@ function Index() {
           </p>
 
           <div className="flex flex-wrap items-center gap-4 pt-2">
-            <Link
-              to="/sos"
+            <a
+              href="https://sheshield-ai-guardian.lovable.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 rounded-[16px] py-4 pl-6 pr-2 text-[15px] font-semibold text-white transition-transform duration-300 hover:scale-[1.03]"
               style={{
                 background: "linear-gradient(135deg,#E85A8A,#C7427A)",
@@ -89,7 +91,7 @@ function Index() {
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white text-[color:var(--blush-deep)] transition group-hover:rotate-45">
                 <ArrowUpRight className="h-4 w-4" />
               </span>
-            </Link>
+            </a>
             <Link to="/features" className="text-[14px] font-medium text-foreground/70 underline-offset-4 hover:underline">
               Explore features
             </Link>
