@@ -18,29 +18,56 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
-  --color-brand-blue: var(--brand-blue);
-  --color-brand-blue-soft: var(--brand-blue-soft);
+  --color-blush: var(--blush);
+  --color-blush-soft: var(--blush-soft);
+  --color-blush-deep: var(--blush-deep);
   --color-star: var(--star);
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-marquee-slow: marquee 60s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 3s ease-in-out infinite;
+  --animate-orb-spin: orb-spin 18s linear infinite;
+  --animate-fade-up: fade-up 0.8s ease-out both;
 }
 
 :root {
   --radius: 1rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.15 0.02 260);
-  --primary: oklch(0.62 0.21 250);
+  --foreground: oklch(0.18 0.03 350);
+  --primary: oklch(0.7 0.18 5);
   --primary-foreground: oklch(1 0 0);
-  --muted: oklch(0.97 0.005 260);
-  --muted-foreground: oklch(0.5 0.02 260);
-  --border: oklch(0 0 0 / 0.1);
-  --brand-blue: #0084FF;
-  --brand-blue-soft: #60B1FF;
+  --muted: oklch(0.97 0.01 350);
+  --muted-foreground: oklch(0.5 0.03 350);
+  --border: oklch(0 0 0 / 0.08);
+  --blush: #E85A8A;
+  --blush-soft: #FFC1D1;
+  --blush-deep: #C7427A;
   --star: #FF801E;
 }
 
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.06); }
+}
+@keyframes orb-spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 @layer base {
-  * {
-    border-color: var(--color-border);
-  }
+  * { border-color: var(--color-border); }
   html, body {
     background-color: var(--color-background);
     color: var(--color-foreground);
