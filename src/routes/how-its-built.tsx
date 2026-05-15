@@ -4,8 +4,8 @@ import { Cpu, Cloud, Lock, Layers, Wifi, Database } from "lucide-react";
 export const Route = createFileRoute("/how-its-built")({
   head: () => ({
     meta: [
-      { title: "How it's built — Shield AI" },
-      { name: "description", content: "The architecture behind Shield AI: on-device ML, encrypted mesh, and a privacy-first cloud." },
+      { title: "How it's built — She Shield AI" },
+      { name: "description", content: "The architecture behind She Shield AI: on-device ML, encrypted mesh, and a privacy-first cloud." },
     ],
   }),
   component: HowItsBuilt,
@@ -27,7 +27,7 @@ const layers = [
   {
     icon: Wifi,
     title: "Offline-first mesh",
-    desc: "When networks fail, alerts hop between nearby Shield AI users via Bluetooth LE until they reach connectivity.",
+    desc: "When networks fail, alerts hop between nearby She Shield AI users via Bluetooth LE until they reach connectivity.",
     tags: ["BLE Mesh", "CRDTs", "Sync"],
   },
   {
@@ -59,7 +59,7 @@ function HowItsBuilt() {
           className="mt-4 font-bold"
           style={{ fontFamily: "Fustat, sans-serif", fontSize: "clamp(38px,5vw,60px)", lineHeight: 1.05, letterSpacing: "-1.5px" }}
         >
-          How Shield AI is built.
+          How She Shield AI is built.
         </h1>
         <p className="mt-4 text-[17px] text-foreground/70">
           A layered system that puts privacy first — designed to work even when everything else fails.
